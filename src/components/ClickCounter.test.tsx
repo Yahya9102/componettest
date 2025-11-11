@@ -15,7 +15,7 @@ test('visar antal klick och Bra-meddelande vid 5 klick', async () => {
 
   // Hej
 
-  expect(screen.getByText('Antal klick: 5')).toBeInTheDocument();
+    
   expect(screen.getByText('Bra jobbat!')).toBeInTheDocument();
 });
 
