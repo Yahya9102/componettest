@@ -1,16 +1,16 @@
-import  counter  from "./hello";
+import { useState } from "react";
+import counter from "./helloFunctions";
 
-const hello = () => {
 
-    let count = 1;
- 
 
-    return(
-        <>
-            <h1>Hello, world!</h1>
-            <button onClick={() => counter(count)}>Click</button>
-            <p>{count}</p>
-        </>
-    )
+export function Hello() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <h1>Hello, world!</h1>
+      <button onClick={() => setCount(counter(count))}>Click</button>
+      <p>{count}</p>
+    </>
+  );
 }
-export default hello;
